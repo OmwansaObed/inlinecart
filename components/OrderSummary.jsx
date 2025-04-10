@@ -1,5 +1,5 @@
-import { addressDummyData } from "@/assets/assets";
-import { useAppContext } from "../../context/Appcontext";
+import { addressDummyData } from "../assets/assets";
+import { useAppContext } from "../context/Appcontext";
 import React, { useEffect, useState } from "react";
 
 const OrderSummary = () => {
@@ -107,7 +107,7 @@ const OrderSummary = () => {
           <div className="flex justify-between text-base font-medium">
             <p className="uppercase text-gray-600">Items {getCartCount()}</p>
             <p className="text-gray-800">
-              {currency}
+              {currency} {` `}
               {getCartAmount()}
             </p>
           </div>
@@ -118,14 +118,14 @@ const OrderSummary = () => {
           <div className="flex justify-between">
             <p className="text-gray-600">Tax (2%)</p>
             <p className="font-medium text-gray-800">
-              {currency}
+              {currency} {` `}
               {Math.floor(getCartAmount() * 0.02)}
             </p>
           </div>
           <div className="flex justify-between text-lg md:text-xl font-medium border-t pt-3">
             <p>Total</p>
             <p>
-              {currency}
+              {currency} {` `}
               {getCartAmount() + Math.floor(getCartAmount() * 0.02)}
             </p>
           </div>

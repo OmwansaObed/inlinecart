@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
-import { assets } from "@/assets/assets";
-import ProductCard from "@/components/ProductCard";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { assets } from "../../../assets/assets";
+import ProductCard from "../../../components/ProductCard";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import Loading from "@/components/Loading";
+import Loading from "../../../components/Loading";
 
 import React from "react";
-import { useAppContext } from "../../context/Appcontext";
+import { useAppContext } from "../../../context/Appcontext";
 
 const Product = () => {
   const { id } = useParams();

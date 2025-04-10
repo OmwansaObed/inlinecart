@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "@/assets/assets";
+import { assets } from "../assets/assets";
 import Image from "next/image";
 import { useAppContext } from "../../context/Appcontext";
 
@@ -51,9 +51,9 @@ const ProductCard = ({ product }) => {
 
       <div className="flex items-end justify-between w-full mt-1">
         <p className="text-base font-medium">
-          {currency}
-          {product.offerPrice}
+          {currency} {` `} {product.offerPrice}
         </p>
+
         <button className=" max-sm:hidden px-4 py-1.5 text-gray-500 border border-gray-500/20 rounded-full text-xs hover:bg-slate-50 transition">
           Buy now
         </button>

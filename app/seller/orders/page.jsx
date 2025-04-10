@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { assets, orderDummyData } from "@/assets/assets";
 import Image from "next/image";
 
-import Footer from "@/components/seller/Footer";
-import Loading from "@/components/Loading";
+import Footer from "../../components/seller/Footer";
+import Loading from "../../components/Loading";
 import { useAppContext } from "../../context/Appcontext";
 
 const Orders = () => {
@@ -66,7 +66,7 @@ const Orders = () => {
                   </p>
                 </div>
                 <p className="font-medium my-auto">
-                  {currency}
+                  {currency} {` `}
                   {order.amount}
                 </p>
                 <div>
