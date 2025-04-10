@@ -2,7 +2,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 
 import { Toaster } from "react-hot-toast";
-import { AppContextProvider } from "@/context/Appcontext";
+import { AppContextProvider } from "../context/Appcontext";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const outfit = Outfit({

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useAppContext } from "../context/Appcontext";
 import { BagIcon, CartIcon } from "../assets/assets";
-import Image from "next/image";
+
 import { useState, useEffect } from "react";
 import { useClerk, UserButton } from "@clerk/nextjs";
 import { BaggageClaim } from "lucide-react";
