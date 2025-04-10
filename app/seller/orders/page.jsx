@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import Footer from "@/components/seller/Footer";
 import Loading from "@/components/Loading";
-import { useAppContext } from "@/context/Appcontext";
+import { useAppContext } from "../../context/Appcontext";
 
 const Orders = () => {
   const { currency } = useAppContext();

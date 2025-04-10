@@ -9,7 +9,7 @@ import { useParams } from "next/navigation";
 import Loading from "@/components/Loading";
 
 import React from "react";
-import { useAppContext } from "@/context/Appcontext";
+import { useAppContext } from "../../context/Appcontext";
 
 const Product = () => {
   const { id } = useParams();
