@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useAppContext } from "../context/Appcontext";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "./ProductCard";
 
 const HomeProducts = () => {
   const { products, router } = useAppContext();
