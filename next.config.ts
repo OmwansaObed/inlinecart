@@ -14,6 +14,11 @@ const nextConfig = {
       },
     ],
   },
+  env: {
+    NEXT_PUBLIC_CURRENCY: process.env.NEXT_PUBLIC_CURRENCY,
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:
+      process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
+  },
 };
 
 export default nextConfig;

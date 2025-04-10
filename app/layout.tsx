@@ -19,8 +19,9 @@ interface Props {
 }
 
 export default function RootLayout({ children }: Props) {
+  const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={publishableKey}>
       <html lang="en">
         <body className={outfit.className}>
           <Toaster />
