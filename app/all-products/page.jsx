@@ -1,5 +1,5 @@
 "use client";
-import ProductCard from "../../components/ProductCard";
+import ProductCard from "../../components/seller/ProductCard";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { useAppContext } from "../../context/Appcontext";
